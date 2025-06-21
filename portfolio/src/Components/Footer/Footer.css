@@ -1,0 +1,33 @@
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 0;
+}
+
+.footer-icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;  
+  object-fit: cover;   
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.footer-icon img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .footer-bottom {
+    justify-content: center; 
+    padding: 15px 0 15px 15px;  
+    gap: 12px;                  
+  }
+
+  .footer-icon img {
+    width: 32px;  
+    height: 32px;
+  }
+}

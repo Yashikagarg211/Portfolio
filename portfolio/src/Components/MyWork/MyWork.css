@@ -1,0 +1,199 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 60px;
+  margin-top: 80px;
+}
+
+.mywork-format {
+  width: 100%;
+  max-width:400px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(90deg, #340a19 0%, #67002f 33%, #A53B60 66%, #FF8BAD 100%);
+  border-radius: 20px;
+  transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.mywork-format:hover {
+  transform: scale(1.05);
+}
+
+.mywork-image-container {
+  width: 100%;
+  position: relative;
+  aspect-ratio: 4/3;
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+  gap: 20px;
+}
+
+.mywork-image-container:hover .overlay {
+  opacity: 1;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #ff0066;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: #cc0055;
+}
+
+.tech-stack {
+  margin: 15px 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tech-btn {
+  padding: 5px 10px;
+  background: #111;
+  color: #fff;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.mywork-showmore {
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover {
+    gap: 30px;
+    transition: 0.6s;
+}
+
+@media (max-width: 1024px) {
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+@media(max-width: 768px) {
+  .mywork {
+    gap: 50px;
+    margin: 50px 70px;
+    align-items: flex-start;
+  }
+  .mywork-title h1 {
+    padding: 0;
+    font-size: 50px;
+    
+  }
+  .mywork-title img {
+    width: 130px;
+    margin-right: -20px;
+  }
+  .mywork-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .mywork-showmore {
+    padding: 20px 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .mywork {
+    margin: 20px 30px;
+    gap: 40px;
+  }
+
+  .mywork-title h1 {
+    font-size: 40px;
+  }
+
+  .mywork-title img {
+    width: 110px;
+  }
+
+  .mywork-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .mywork-format {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .overlay {
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+  .mywork-showmore {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}
