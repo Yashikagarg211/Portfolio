@@ -1,0 +1,211 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px;
+}
+
+.contact-title {
+    position: relative;
+}
+
+.contact-title h1 {
+    padding:0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-section {
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1 {
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(90deg,#FFC1DA 20%, #d3326d 100% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-left p {
+    max-width: 550px;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    font-size: 22px;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+
+.contact-right label {
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.contact-right input,
+.contact-right textarea {
+    width: 650px;
+    padding: 10px;
+    border: 2px solid #474043;
+    background-color: #74083B !important;  
+    color: white !important;               
+    font-size: 20px;
+    border-radius: 4px;
+    font-family: sans-serif;
+}
+
+.contact-right input:-webkit-autofill,
+.contact-right input:-webkit-autofill:hover,
+.contact-right input:-webkit-autofill:focus,
+.contact-right textarea:-webkit-autofill,
+.contact-right textarea:-webkit-autofill:hover,
+.contact-right textarea:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px #74083B inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 0s, color 0s;
+}
+
+.contact-submit {
+    border: none;
+    color: white;
+    border-radius: 50px;
+     background: linear-gradient(90deg, #3A0519 0%, #670D2F 33%, #A53860 66%, #EF88AD 100% );
+     font-size: 22px;
+     padding: 20px 60px;
+     margin-bottom: 50px;
+     cursor: pointer;
+     transition: 0.3s;
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        gap: 50px;
+        margin: 50px 20px;
+        align-items: flex-start;
+        padding-left: 15px; 
+    }
+
+    .contact-title h1 {
+        padding: 0;
+        font-size: 42px;
+        text-align: left;
+    }
+
+    .contact-title img {
+        width: 100px;
+        right: -10px;
+        bottom: -10px;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        gap: 40px;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 10px; 
+    }
+
+    .contact-left {
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .contact-left h1 {
+        font-size: 36px;
+        text-align: left;
+    }
+
+    .contact-left p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 95%;
+        text-align: left;
+    }
+
+    .contact-details {
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .contact-detail {
+        justify-content: flex-start;
+        gap: 12px;
+    }
+
+    .contact-detail img {
+        width: 20px;
+    }
+
+    .contact-detail a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    .contact-right {
+        width: 100%;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .contact-right label {
+        font-size: 18px;
+    }
+
+    .contact-right input,
+    .contact-right textarea {
+        width: 95%;
+        max-width: 500px;
+        font-size: 16px;
+    }
+
+    .contact-submit {
+        font-size: 16px;
+        padding: 12px 28px;
+    }
+}

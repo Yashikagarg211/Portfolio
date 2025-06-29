@@ -1,12 +1,18 @@
 import React from 'react'
+import { useRef } from 'react'
 import './Contact.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import theme_pattern from '../../assets/theme_pattern.svg'
 import mail_icon from '../../assets/mail_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 
 
+
 export default function Contact() {
+
+    const formRef = useRef(null);
 
     const onSubmit = async (event) => {
     event.preventDefault();
@@ -27,8 +33,19 @@ export default function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      alert(res.message);
-    }
+      toast.success("Thank you! Your message has been received. I’ll get back to you soon.", {
+       className: "toast-success",
+       bodyClassName: "toast-body",
+       progressClassName: "toast-progress"
+});
+      formRef.current.reset();
+    } else {
+    toast.error("Sorry! Something went wrong. Please try again or contact me at yashikagarg1124@gmail.com.", {
+       className: "toast-error",
+       bodyClassName: "toast-body",
+       progressClassName: "toast-progress"
+});
+  }
   };
 
   return (
@@ -53,7 +70,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <form onSubmit={onSubmit} className="contact-right">
+            <form onSubmit={onSubmit} ref={formRef} className="contact-right">
                 <label htmlFor="">Your Name</label>
                 <input type="text" placeholder='Enter your Name' name='name'/>
                 <label htmlFor="">Your Email</label>
@@ -65,6 +82,7 @@ export default function Contact() {
             </form>
 
         </div>
+        <ToastContainer position="top-right" autoClose={3000} />
     </div>
   )
 }

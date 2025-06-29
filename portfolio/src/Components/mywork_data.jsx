@@ -11,8 +11,8 @@ export const myWork_data = [
     w_img: Portfolio,
     tech_stack: ["React", "CSS"],
     buttons: [
-      { text: "Live Demo", link: "https://yourproject.com" },
-      { text: "Github", link: "https://yourdemo.com" }
+      { text: "Live Demo", link: "https://youtu.be/G0RpeDOCmkQ" },
+      { text: "Github", link: "https://github.com/Yashikagarg211/Portfolio" }
     ]
   },
   {

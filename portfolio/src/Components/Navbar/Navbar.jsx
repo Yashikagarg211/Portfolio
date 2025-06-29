@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './Navbar.css'
-import logo from '../../assets/updated_design_yashika_garg.svg'
+import logo from '../../assets/logo.svg'
 import underline from '../../assets/nav_underline.svg'
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import menu_open from '../../assets/menu_open.svg'
@@ -21,7 +21,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>
-        <img src={logo} alt='logo' className='logo'/>
+        <img src={logo} width={125} height={70} alt='logo' className='logo'/>
         <img src={menu_open} alt='' className='nav-mob-open' onClick={openMenu}/>
         <ul ref={menuRef}  className="nav-menu">
             <img src={menu_close} onClick={closeMenu} alt='' className='nav-mob-close'/>

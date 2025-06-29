@@ -24,7 +24,7 @@ export default function MyWork() {
                      {/* Hover Overlay */}
                      <div className="overlay">
                       {work.buttons.map((btn, index) => (
-                  <a href={btn.link} target="_blank" rel="noopener noreferrer" className="btn" key={index}>
+                       <a href={btn.link} target="_blank" rel="noopener noreferrer" className="btn" key={index}>
                     {btn.text}
                   </a>
                 ))}

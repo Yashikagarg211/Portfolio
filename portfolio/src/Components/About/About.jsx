@@ -15,8 +15,12 @@ export default function About() {
                 <img src={profile_img} alt='' />
             </div>
             <div className="about-right">
-                <p>Passionate about bringing ideas to life through a blend of creativity and technology. I specialize in crafting interactive digital experiences that are both visually engaging and user-centered.
-                Passionate about bringing ideas to life through a blend of creativity and technology. I specialize in crafting interactive digital experiences that are both visually engaging and user-centered.Passionate about bringing ideas to life through a blend of creativity and technology. I specialize in crafting interactive digital experiences that are both visually engaging and user-centered.Passionate about bringing ideas to life through a blend of creativity and technology. I specialize in crafting interactive digital experiences that are both visually engaging and user-centered.Passionate about bringing ideas to life through a blend of creativity and technology. I specialize in crafting interactive digital experiences that are both visually engaging and user-centered.</p>
+                <p>I'm a passionate Frontend Developer who loves bringing ideas to life through clean, interactive, and user-friendly web interfaces. With a strong foundation in HTML, CSS, JavaScript, React, and Tailwind CSS, I enjoy transforming complex problems into elegant digital experiences.<br/>
+                <br/>
+                I'm also a design thinker who values good UI/UX — often turning to Figma and Canva to prototype and plan visually appealing layouts. I thrive in collaborative environments and bring along strong leadership and communication skills, often taking initiative and driving impact beyond just code.
+                <br/>
+                <br/>
+                Currently exploring how AI and modern web tools can enhance everyday web experiences, I'm always eager to learn, build, and innovate. Whether it's a responsive website or a fun interactive feature, I aim to create web solutions that not only work — but wow.</p>
             </div>
         </div>
     </div>
