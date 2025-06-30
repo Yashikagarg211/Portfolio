@@ -51,26 +51,35 @@
 }
 @media(max-width:768px) {
     .about {
-        gap: 80px;
-        margin: 50px 70px;
+        gap: 6px;
+        margin: auto;
         align-items: start;
     }
     .about-title h1 {
+        margin: 50px 60px;
         font-size: 50px;
         padding: 0;
     }
     .about-title img {
+        margin: 50px 60px;
         width: 130px;
         right: -20px;
     }
     .about-sections {
         flex-direction: column;
+        margin: 0px 10px;
     }
     .about-left {
         display: none;
     }
     .about-right {
         font-size: 18px;
-        line-height: 32px;
+        text-align: justify;
+        text-justify: inter-word;
+        word-spacing: 0.05em;
+        max-width: 600px;
+        margin: auto;
+        line-height: 31px;
     }
 }
+

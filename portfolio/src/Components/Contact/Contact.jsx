@@ -33,7 +33,7 @@ export default function Contact() {
     }).then((res) => res.json());
 
     if (res.success) {
-      toast.success("Thank you! Your message has been received. I’ll get back to you soon.", {
+      toast.success("Thank you! Your message has been received. I'll get back to you soon.", {
        className: "toast-success",
        bodyClassName: "toast-body",
        progressClassName: "toast-progress"
